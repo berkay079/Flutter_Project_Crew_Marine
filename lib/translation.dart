@@ -16,6 +16,7 @@ class Messages extends Translations {
           'ns':' Name&LastName : ',
           'fs': 'First Name : ',
           'ls':'Last Name : ',
+          'directLocation':'Direct Location',
         },
         'tr_TR': {
           'contracts': 'kontrat',
@@ -30,6 +31,8 @@ class Messages extends Translations {
           'ns':' Ad&Soyad : ',
           'fs': 'İsim : ',
           'ls':'Soyisim : ',
+          'directLocation':'Konuma git',
+
 
 
 
