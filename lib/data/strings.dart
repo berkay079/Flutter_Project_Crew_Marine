@@ -1,3 +1,8 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../translation.dart';
+
 class Strings {
   static const String APP_NAME = "Crew List";
 
@@ -58,6 +63,21 @@ class Strings {
     "Cook3",
     "Captain4",
     "Engineer4",
-    "Cook4"
+    "Cook4",
   ];
+}
+
+
+class name extends StatelessWidget {
+  const name({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      translations: Messages(), // your translations
+      locale: Get.deviceLocale,
+      fallbackLocale: Locale('en', 'UK'), // specify the fallback locale in case an invalid locale is selected.
+     
+    );
+  }
 }

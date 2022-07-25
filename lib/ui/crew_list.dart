@@ -3,6 +3,12 @@ import 'package:flutter_test_project_crew_marine/model/crew.dart';
 import 'package:flutter_test_project_crew_marine/data/strings.dart';
 import 'package:flutter_test_project_crew_marine/ui/crew_item.dart';
 import 'package:flutter_test_project_crew_marine/ui/drawer_menu.dart';
+import 'package:flutter_test_project_crew_marine/ui/marine.dart';
+import 'package:flutter_test_project_crew_marine/ui/bottomNavMenu.dart';
+import 'package:get/get.dart';
+
+
+
 
 
 
@@ -19,7 +25,7 @@ class CrewList extends StatelessWidget {
    return Scaffold(
       drawer: const DrawerMenu(),
       appBar: AppBar(
-        title: Text('Crew'),
+      title: Text('crew'.tr),
       ),
       body: Center(
         child: ListView.builder(itemBuilder: (context, index){
@@ -27,6 +33,7 @@ class CrewList extends StatelessWidget {
         },
         itemCount: allCrew.length,),
       ),
+        bottomNavigationBar: bottomNavMenu(),
     );
   }
  
@@ -57,14 +64,20 @@ class CrewList extends StatelessWidget {
               icon: Icon(Icons.people_alt),
               label: 'Crew',
               backgroundColor: Colors.amber),
+
           BottomNavigationBarItem(
+            // onPressed: (){
+            //   Get.to(Marine());
+            // },
               icon: Icon(Icons.map),
               label: 'Marine',
               backgroundColor: Colors.red),
+              
        
         ],
-       
+        
       ),
     );
   }
 }
+
