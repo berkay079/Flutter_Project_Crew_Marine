@@ -45,8 +45,9 @@ class CrewList extends StatelessWidget {
       var crewLastName =Strings.Last_Name[i];
       var crewNationality =Strings.Nationality[i];
       var crewTitle =Strings.Title[i];
+      var crewCertificate =Strings.Certificate[i];
 
-      Crew eklenecek = Crew(crewName,crewLastName,crewNationality,crewTitle);
+      Crew eklenecek = Crew(crewName,crewLastName,crewNationality,crewTitle,crewCertificate);
       gecici.add(eklenecek);
     }
     return gecici;

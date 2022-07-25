@@ -65,6 +65,21 @@ class Strings {
     "Engineer4",
     "Cook4",
   ];
+   static const List<String> Certificate = [
+    "Certifica name1: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name2: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name3: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name4: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name5: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name6: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name7: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name8: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name9: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name10: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name11: asdsd +Certifica Date: 12.02.2019",
+    "Certifica name12: asdsd +Certifica Date: 12.02.2019",
+  ];
+
 }
 
 

@@ -28,6 +28,20 @@ class CrewDetails extends StatelessWidget {
                 Text('ls'.tr + secilenCrew.lastName, style:TextStyle(fontSize: 24),),
                   const Divider(),
                 Text('nationality'.tr + secilenCrew.nationality, style:TextStyle(fontSize: 24),),
+                  const Divider(),
+                PopupMenuButton(
+                  child: Icon(Icons.open_in_new),
+                  itemBuilder: (context) => [
+                    PopupMenuItem(
+                    value: 1,
+                    child:Text(secilenCrew.certifica, style: TextStyle(color: Colors.red),),
+                    ),
+                    PopupMenuItem(
+                    value: 2,
+                    child:Text("sil", style: TextStyle(color: Colors.red),),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
