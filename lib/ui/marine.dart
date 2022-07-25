@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-//import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 
 class Marine extends StatefulWidget {
@@ -15,8 +15,8 @@ class Marine extends StatefulWidget {
 
 class _MarineState extends State<Marine> {
 
-  // Completer<GoogleMapController> haritaKontrol = Completer();
-  // var baslangicKonum = CameraPosition(target: LatLng(38.7412482,26.1844276),zoom: 4,);
+  Completer<GoogleMapController> haritaKontrol = Completer();
+  var baslangicKonum = CameraPosition(target: LatLng(-8.8533562,13.2140636),zoom: 10,);
 
  
     @override
@@ -26,21 +26,21 @@ class _MarineState extends State<Marine> {
         title: Text('Marine'),
       ),
       body: Center(
-        // child: Column(
-        //   children: [
-        //     SizedBox(
-        //       width: 400,
-        //       height: 300,
-        //       child: GoogleMap(
-        //         mapType: MapType.normal,
-        //         initialCameraPosition: baslangicKonum,
-        //         onMapCreated: (GoogleMapController controller){
-        //           haritaKontrol.complete(controller);
-        //         },
-        //       ),
-        //     ),
-        //   ],
-        // ),
+        child: Column(
+          children: [
+            SizedBox(
+              width: 400,
+              height: 700,
+              child: GoogleMap(
+                mapType: MapType.hybrid,
+                initialCameraPosition: baslangicKonum,
+                onMapCreated: (GoogleMapController controller){
+                  haritaKontrol.complete(controller);
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
