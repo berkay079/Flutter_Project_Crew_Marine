@@ -33,11 +33,6 @@ class Messages extends Translations {
           'ls':'Soyisim : ',
           'directLocation':'Konuma git',
 
-
-
-
-
-
         }
       };
 }

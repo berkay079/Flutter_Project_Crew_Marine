@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test_project_crew_marine/ui/crew_list.dart';
 import 'package:flutter_test_project_crew_marine/ui/settings_page.dart';
 import 'package:get/get.dart';
-
 import 'marine.dart';
 
 class DrawerMenu extends StatefulWidget {

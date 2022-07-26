@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_project_crew_marine/ui/crew_details.dart';
-import 'package:flutter_test_project_crew_marine/ui/crew_list.dart';
 import '../model/crew.dart';
 import 'package:get/get.dart';
 

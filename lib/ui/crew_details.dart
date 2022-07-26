@@ -30,7 +30,7 @@ class CrewDetails extends StatelessWidget {
                 Text('nationality'.tr + secilenCrew.nationality, style:TextStyle(fontSize: 24),),
                   const Divider(),
                 PopupMenuButton(
-                  child: Icon(Icons.open_in_new),
+                  child: Icon(Icons.wysiwyg),
                   itemBuilder: (context) => [
                     PopupMenuItem(
                     value: 1,
@@ -38,7 +38,7 @@ class CrewDetails extends StatelessWidget {
                     ),
                     PopupMenuItem(
                     value: 2,
-                    child:Text("sil", style: TextStyle(color: Colors.red),),
+                    child:Text(secilenCrew.certifica2, style: TextStyle(color: Colors.red),),
                     ),
                   ],
                 ),

@@ -5,6 +5,7 @@ class Crew {
   final String _nationality;
   final String _title;
   final String _certificate;
+  final String _certificate2;
 
   get firstName => this._firstName;
 
@@ -15,11 +16,14 @@ class Crew {
   get title => this._title;
 
   get certifica => this._certificate;
+  
+  get certifica2 => this._certificate2;
 
 
 
 
-  Crew(this._firstName, this._lastName, this._nationality, this._title, this._certificate);
+
+  Crew(this._firstName, this._lastName, this._nationality, this._title, this._certificate, this._certificate2);
   
   @override
   String toString() {
