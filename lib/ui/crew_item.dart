@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_project_crew_marine/ui/crew_details.dart';
-import 'package:flutter_test_project_crew_marine/ui/crew_list.dart';
 import '../model/crew.dart';
+import 'package:get/get.dart';
+
 
 class CrewItem extends StatelessWidget {
   final Crew listCrew;
@@ -27,8 +28,8 @@ class CrewItem extends StatelessWidget {
             size: 30.0
             ),
           ),
-          title: Text(listCrew.title+': '+listCrew.firstName +''+ listCrew.lastName),
-          subtitle: Text('Nationality:'+' '+ listCrew.nationality),
+          title: Text(listCrew.title+'ns'.tr+listCrew.firstName +''+ listCrew.lastName),
+          subtitle: Text('nationality'.tr +' '+ listCrew.nationality),
           trailing: Icon(
           Icons.arrow_forward_ios,size: 30.0, 
           color: Colors.pink

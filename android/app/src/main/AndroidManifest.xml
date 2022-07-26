@@ -4,6 +4,10 @@
         android:label="flutter_test_project_crew_marine"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAVW3kfg3CfP453ehNNUbz181dY5Nsg8_8"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -30,5 +34,6 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        
     </application>
 </manifest>
